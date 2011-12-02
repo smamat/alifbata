@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* jAbjadAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {956, 475}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 489}";
+		};
+	};
+	1D3623250D0F684500981E51 /* jAbjadAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1144}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1253}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* jAbjad */ = {
+		activeExec = 0;
+		executables = (
+			43BBF4BD147E9A88001C5FFB /* jAbjad */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* jAbjadViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {956, 572}}";
+			sepNavSelRange = "{431, 0}";
+			sepNavVisRange = "{162, 835}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* jAbjadViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {956, 2392}}";
+			sepNavSelRange = "{2172, 0}";
+			sepNavVisRange = "{504, 988}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 43BBF4BD147E9A88001C5FFB /* jAbjad */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* jAbjad */;
+		addToTargets = (
+		);
+		codeSenseManager = 43BBF4CD147E9A91001C5FFB /* Code sense */;
+		executables = (
+			43BBF4BD147E9A88001C5FFB /* jAbjad */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					778,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 344527617;
+			PBXWorkspaceStateSaveDate = 344527617;
+		};
+		perUserProjectItems = {
+			437A96A61489142400D6C550 /* PBXTextBookmark */ = 437A96A61489142400D6C550 /* PBXTextBookmark */;
+			437A96A71489142400D6C550 /* PBXTextBookmark */ = 437A96A71489142400D6C550 /* PBXTextBookmark */;
+			437A96A81489142400D6C550 /* PBXTextBookmark */ = 437A96A81489142400D6C550 /* PBXTextBookmark */;
+			437A96A91489142400D6C550 /* PBXBookmark */ = 437A96A91489142400D6C550 /* PBXBookmark */;
+			437A96AA1489142400D6C550 /* PBXTextBookmark */ = 437A96AA1489142400D6C550 /* PBXTextBookmark */;
+			43BBF4FC147E9E6A001C5FFB /* PBXBookmark */ = 43BBF4FC147E9E6A001C5FFB /* PBXBookmark */;
+			43BBF4FE147E9E6A001C5FFB /* PBXBookmark */ = 43BBF4FE147E9E6A001C5FFB /* PBXBookmark */;
+			43BBF4FF147E9E6A001C5FFB /* PBXBookmark */ = 43BBF4FF147E9E6A001C5FFB /* PBXBookmark */;
+			43EAE7521480A4BD00A7F452 /* PBXBookmark */ = 43EAE7521480A4BD00A7F452 /* PBXBookmark */;
+			43EAE7531480A4BD00A7F452 /* PBXBookmark */ = 43EAE7531480A4BD00A7F452 /* PBXBookmark */;
+			43EAE7541480A4BD00A7F452 /* PBXBookmark */ = 43EAE7541480A4BD00A7F452 /* PBXBookmark */;
+			43EAE7D81481510000A7F452 /* PlistBookmark */ = 43EAE7D81481510000A7F452 /* PlistBookmark */;
+			43EAE7D91481510000A7F452 /* PlistBookmark */ = 43EAE7D91481510000A7F452 /* PlistBookmark */;
+		};
+		sourceControlManager = 43BBF4CC147E9A91001C5FFB /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	4319EFCE1483C5DD002F6FDD /* jUIImageView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {956, 453}}";
+			sepNavSelRange = "{96, 0}";
+			sepNavVisRange = "{0, 297}";
+			sepNavWindowFrame = "{{117, -3}, {969, 640}}";
+		};
+	};
+	4319EFD01483C632002F6FDD /* jUIImageView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {956, 453}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 113}";
+		};
+	};
+	437A96A61489142400D6C550 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4319EFD01483C632002F6FDD /* jUIImageView.h */;
+		name = "jUIImageView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 113;
+		vrLoc = 0;
+	};
+	437A96A71489142400D6C550 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4319EFCE1483C5DD002F6FDD /* jUIImageView.m */;
+		name = "jUIImageView.m: 6";
+		rLen = 0;
+		rLoc = 96;
+		rType = 0;
+		vrLen = 297;
+		vrLoc = 0;
+	};
+	437A96A81489142400D6C550 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 43BBF4D6147E9AF8001C5FFB /* AbjadConstants.h */;
+		name = "AbjadConstants.h: 14";
+		rLen = 0;
+		rLoc = 258;
+		rType = 0;
+		vrLen = 258;
+		vrLoc = 0;
+	};
+	437A96A91489142400D6C550 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* jAbjadViewController.m */;
+	};
+	437A96AA1489142400D6C550 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* jAbjadViewController.m */;
+		name = "jAbjadViewController.m: 82";
+		rLen = 0;
+		rLoc = 2172;
+		rType = 0;
+		vrLen = 988;
+		vrLoc = 504;
+	};
+	43BBF4BD147E9A88001C5FFB /* jAbjad */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = jAbjad;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	43BBF4CC147E9A91001C5FFB /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	43BBF4CD147E9A91001C5FFB /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	43BBF4D6147E9AF8001C5FFB /* AbjadConstants.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {956, 453}}";
+			sepNavSelRange = "{258, 0}";
+			sepNavVisRange = "{0, 258}";
+		};
+	};
+	43BBF4E2147E9D51001C5FFB /* burung.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = burung.png;
+		path = /Users/DD_LZ_09/Developments/jAbjad/burung.png;
+		sourceTree = "<absolute>";
+	};
+	43BBF4E4147E9D56001C5FFB /* jerung.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = jerung.png;
+		path = /Users/DD_LZ_09/Developments/jAbjad/jerung.png;
+		sourceTree = "<absolute>";
+	};
+	43BBF4E8147E9D69001C5FFB /* cacing.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = cacing.png;
+		path = /Users/DD_LZ_09/Developments/jAbjad/cacing.png;
+		sourceTree = "<absolute>";
+	};
+	43BBF4FC147E9E6A001C5FFB /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 43BBF4E8147E9D69001C5FFB /* cacing.png */;
+	};
+	43BBF4FE147E9E6A001C5FFB /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 43BBF4E2147E9D51001C5FFB /* burung.png */;
+	};
+	43BBF4FF147E9E6A001C5FFB /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 43BBF4E4147E9D56001C5FFB /* jerung.png */;
+	};
+	43EAE7521480A4BD00A7F452 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 43EAE6F21480A48200A7F452 /* blank.png */;
+	};
+	43EAE7531480A4BD00A7F452 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 43EAE7121480A48300A7F452 /* tenuk.png */;
+	};
+	43EAE7541480A4BD00A7F452 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 43EAE6EF1480A48200A7F452 /* ayam.png */;
+	};
+	43EAE7D81481510000A7F452 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* jAbjad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/DD_LZ_09/Developments/jAbjad/jAbjad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	43EAE7D91481510000A7F452 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 43BBF4D4147E9AEE001C5FFB /* AbjadSpell.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			4,
+			letters,
+			3,
+		);
+		name = /Users/DD_LZ_09/Developments/jAbjad/AbjadSpell.plist;
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+}

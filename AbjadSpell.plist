@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>ayam</string>
+		<key>letters</key>
+		<array>
+			<string>alif1</string>
+			<string>ya1</string>
+			<string>mim3</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>burung</string>
+		<key>letters</key>
+		<array>
+			<string>ba1</string>
+			<string>wau2</string>
+			<string>ra0</string>
+			<string>wau0</string>
+			<string>nga0</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>tenuk</string>
+		<key>letters</key>
+		<array>
+			<string>ta1</string>
+			<string>nun2</string>
+			<string>wau2</string>
+			<string>qaf0</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>cacing</string>
+		<key>letters</key>
+		<array>
+			<string>ca1</string>
+			<string>alif2</string>
+			<string>ca1</string>
+			<string>ya2</string>
+			<string>nga3</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>jerung</string>
+		<key>letters</key>
+		<array>
+			<string>jim1</string>
+			<string>ra2</string>
+			<string>wau1</string>
+			<string>nga0</string>
+		</array>
+	</dict>
+</array>
+</plist>
