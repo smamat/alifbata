@@ -16,6 +16,7 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* jAbjadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* jAbjadViewController.m */; };
 		4319EFCF1483C5DD002F6FDD /* jUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4319EFCE1483C5DD002F6FDD /* jUIImageView.m */; };
+		4354608A1489CB4100ACFE5C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435460891489CB4100ACFE5C /* AVFoundation.framework */; };
 		43BBF4D5147E9AEE001C5FFB /* AbjadSpell.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43BBF4D4147E9AEE001C5FFB /* AbjadSpell.plist */; };
 		43EAE71E1480A48300A7F452 /* ain0.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE6EB1480A48200A7F452 /* ain0.png */; };
 		43EAE71F1480A48300A7F452 /* alif0.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EAE6EC1480A48200A7F452 /* alif0.png */; };
@@ -85,6 +86,7 @@
 		32CA4F630368D1EE00C91783 /* jAbjad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jAbjad_Prefix.pch; sourceTree = "<group>"; };
 		4319EFCE1483C5DD002F6FDD /* jUIImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jUIImageView.m; sourceTree = "<group>"; };
 		4319EFD01483C632002F6FDD /* jUIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jUIImageView.h; sourceTree = "<group>"; };
+		435460891489CB4100ACFE5C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		43BBF4D4147E9AEE001C5FFB /* AbjadSpell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AbjadSpell.plist; sourceTree = "<group>"; };
 		43BBF4D6147E9AF8001C5FFB /* AbjadConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbjadConstants.h; sourceTree = "<group>"; };
 		43EAE6EB1480A48200A7F452 /* ain0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ain0.png; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				4354608A1489CB4100ACFE5C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +220,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				435460891489CB4100ACFE5C /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

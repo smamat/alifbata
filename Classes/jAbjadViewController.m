@@ -15,6 +15,7 @@
 @synthesize bPrev, bHome, bNext;
 @synthesize ivLetters;
 @synthesize abjadList;
+@synthesize aplayer;
 
 - (IBAction) prevButtonTapped {
 	NSLog( @"prev button tapped" );
@@ -69,7 +70,11 @@
 	int tag = 1;
 	for (; tag<=PANEL_SIZE; ++tag) {
 		UIImage * img = [UIImage imageNamed:@"blank.png"];
-		[((UIImageView*)[self.view viewWithTag:tag]) setImage:img];	
+		[((UIImageView*)[self.view viewWithTag:tag]) setImage:img];
+		// mirror in upper panel
+		//int tag2 = tag+PANEL_SIZE;
+		[((UIImageView*)[self.view viewWithTag:tag+PANEL_SIZE]) setImage:img];
+		
 	}
 	
 	// calculate where letter starts
@@ -79,15 +84,19 @@
 	// shift/unshift depending on odd/even number of letters
 	if (1 == nLetters%2) { // odd number
 		if (!isPanelShifted) {
-			for (int i=1; i<PANEL_SIZE; ++i)
+			for (int i=1; i<PANEL_SIZE; ++i) {
 				[((UIImageView*)[self.view viewWithTag:i]) shiftPanel];
+				[((UIImageView*)[self.view viewWithTag:i+PANEL_SIZE]) shiftPanel];
+			}
 			isPanelShifted = YES;
 		}
 	}
 	else { // even number
 		if (isPanelShifted) {
-			for (int i=1; i<PANEL_SIZE; ++i)
+			for (int i=1; i<PANEL_SIZE; ++i) {
 				[((UIImageView*)[self.view viewWithTag:i]) unshiftPanel];
+				[((UIImageView*)[self.view viewWithTag:i+PANEL_SIZE]) unshiftPanel];
+			}
 			isPanelShifted = NO;
 		}
 	}
@@ -101,13 +110,20 @@
 		// get letter filename
 		NSString * letterName = [NSString stringWithFormat:@"%@", letter];
 		NSString * letterFilename = [[NSBundle mainBundle] pathForResource:letterName ofType:@"png"];
-		//NSLog( @"letter: %@", letterFilename);
 		// set letter in panel
 		UIImage * img = [UIImage imageWithContentsOfFile:letterFilename];
 		[((UIImageView*)[self.view viewWithTag:tag]) setImage:img];
 		
+		// mirror in upper panel
+		NSRange stringRange = {0,([letterName length]-1)};
+		NSString *shortString = [letter substringWithRange:stringRange];
+		letterName = [NSString stringWithFormat:@"%@0", shortString];
+		letterFilename = [[NSBundle mainBundle] pathForResource:letterName ofType:@"png"];
+		img = [UIImage imageWithContentsOfFile:letterFilename];
+		[((UIImageView*)[self.view viewWithTag:tag+PANEL_SIZE]) setImage:img];
+		
+		
 		++tag;
-
 	}
 }
 
@@ -131,6 +147,77 @@
 }
 */
 
+/*
+ AUDIO HANDLING
+ */
+
+- (void) audioPlayerEndInterruption:(AVAudioPlayer *)player
+{
+	NSLog(@"audioPlayerEndInterruption");
+}
+
+- (void) audioPlayerBeginInterruption:(AVAudioPlayer *)player
+{
+	NSLog(@"audioPlayerBeginInterruption");
+}
+
+- (IBAction) playLetter : (id) sender
+{
+	NSLog( @"playLetter: tag %d", [sender tag] );
+}
+
+/*
+ END AUDIO HANDLING
+ */
+
+/*
+ GESTURE TOUCH SETUP
+ */
+
+- (void) setPictureGesture
+{
+	ivPicture.userInteractionEnabled = YES;
+
+	// swipe picture left
+	UISwipeGestureRecognizer * swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
+	swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+	[ivPicture addGestureRecognizer:swipeLeft];
+	[swipeLeft release];
+	
+	// swipe picture right
+	UISwipeGestureRecognizer * swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
+	swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+	[ivPicture addGestureRecognizer:swipeRight];
+	[swipeRight release];
+}
+
+- (void) handleSwipe : (id) sender
+{
+	NSLog( @"swipe gesture detected yo!" );
+
+	switch ([(UISwipeGestureRecognizer*)sender direction]) {
+		case UISwipeGestureRecognizerDirectionRight:
+			[self prevButtonTapped];
+			break;
+		case UISwipeGestureRecognizerDirectionLeft:
+			[self nextButtonTapped];
+			break;
+		default:
+			break;
+	}
+	
+/*	if (UISwipeGestureRecognizerDirectionRight == [(UISwipeGestureRecognizer*)sender direction])
+		[self prevButtonTapped];
+	else if
+		NSLog(@"blah");
+	}
+*/
+	
+}
+
+/*
+ END GESTURE TOUCH SETUP
+ */
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -146,8 +233,19 @@
 	self.abjadList = tmpArray;
 	[tmpArray release];
 	
+	// set first object
 	[self updateMedia:abjadNo];
-	//++abjadNo;
+	
+	// configure ivPicture with gesture touch handler
+	[self setPictureGesture];
+	
+	/*ivPicture.userInteractionEnabled = YES;
+	
+	UISwipeGestureRecognizer * swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
+	swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+	[ivPicture addGestureRecognizer:swipeRight];
+	[swipeRight release];*/
+											 
 	
 }
 
@@ -180,6 +278,7 @@
 	[bNext release];
 	[ivLetters release];
 	[abjadList release];
+	[aplayer release];
     [super dealloc];
 }
 
