@@ -53,6 +53,7 @@
 	//NSString * picFilename = [[NSBundle mainBundle] pathForResource:objectName ofType:@"png" inDirectory:@""];
 	UIImage * image = [UIImage imageNamed:picFilename];
 	NSLog( @"objectName: %@, picFilename: %@", objectName, picFilename );
+	NSLog( @"UIImage: %f x %f", image.size.width, image.size.height );
 	
 	// update letters on spelling sheet
 	if (isPanelShifted)
@@ -112,12 +113,15 @@
 		NSString * letterFilename = [[NSBundle mainBundle] pathForResource:letterName ofType:@"png"];
 		// set letter in panel
 		UIImage * img = [UIImage imageWithContentsOfFile:letterFilename];
-		[((UIImageView*)[self.view viewWithTag:tag]) setImage:img];
+		NSLog( @"%@: %.0f %.0f", letterName, img.size.width, img.size.height );
+		UIImageView * tile = (UIImageView*)[self.view viewWithTag:tag];
+		//tile.frame = CGRectMake(tile.frame.origin.x, tile.frame.origin.y, img.size.width, img.size.height);
+		[tile setImage:img];
 		
-		// mirror in upper panel
+		// mirror in upper panel for separate letters
 		NSRange stringRange = {0,([letterName length]-1)};
 		NSString *shortString = [letter substringWithRange:stringRange];
-		letterName = [NSString stringWithFormat:@"%@0", shortString];
+		letterName = [NSString stringWithFormat:@"%@", shortString];
 		letterFilename = [[NSBundle mainBundle] pathForResource:letterName ofType:@"png"];
 		img = [UIImage imageWithContentsOfFile:letterFilename];
 		[((UIImageView*)[self.view viewWithTag:tag+PANEL_SIZE]) setImage:img];
